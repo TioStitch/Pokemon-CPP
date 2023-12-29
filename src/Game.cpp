@@ -8,7 +8,7 @@ using namespace std;
 class Game {
     public:
 
-    string prc = "[PROFESSOR CARALHO] ";
+    string prc = "[PROFESSOR Carvalho] ";
     
     Pokemon pokemons[3];
 
@@ -24,9 +24,9 @@ class Game {
         cout << prc << "Ola jovem treinador, por favor, escolha o seu pokemon inicial. " << endl;
         cout << prc << "Voce pode escolher entre os pokemons abaixo: \n" << endl;
 
-        cout << "[PIKOMON] 0. Charmander" << endl;
-        cout << "[PIKOMON] 1. Bulbasaur" << endl;
-        cout << "[PIKOMON] 2. Squirtle \n" << endl;
+        cout << "[POKEMON] 0. Charmander" << endl;
+        cout << "[POKEMON] 1. Bulbasaur" << endl;
+        cout << "[POKEMON] 2. Squirtle \n" << endl;
 
         int yourSelect;
         cin >> yourSelect;
@@ -48,9 +48,9 @@ class Game {
         hp = selectedPokemon.getHP();
         enemyHp = selectedEnemy.getHP();
 
-            cout << "[PIKOMON] Voce escolheu o '" << selectedPokemon.getName() << "'! Parabens!!!\n" << endl;
+            cout << "[POKEMON] Voce escolheu o '" << selectedPokemon.getName() << "'! Parabens!!!\n" << endl;
 
-            cout << prc<< "Voce deseja entrar em uma batalha contra: Gotica Rabuda ?" << endl;
+            cout << prc<< "Voce deseja entrar em uma batalha contra: Any ?" << endl;
             cout << prc<< "1. Sim 2. Nao" << endl;
             int acceptable = 0;
             cin >> acceptable;
@@ -68,8 +68,8 @@ class Game {
     void startBattle() {
              cout << prc << "Uma lendaria batalha inicia-se meu caro treinador!" << endl;
              cout << prc << "[Voce] Vai " << selectedPokemon.getName() << "!" << endl;
-             cout << prc << "[Gotica Rabuda] Vai " << selectedEnemy.getName() << endl;
-             cout << prc << "["<< selectedPokemon.getName() <<"] Um tapa na gostosa! \n" << endl;
+             cout << prc << "[Any] Vai " << selectedEnemy.getName() << endl;
+             cout << prc << "["<< selectedPokemon.getName() <<"] Zrummm!! \n" << endl;
 
         
             repeatAttack();
